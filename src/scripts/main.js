@@ -371,7 +371,7 @@ const rows = people.map((person) => {
   // Використовуємо шаблонний рядок для наповнення tr
   tr.innerHTML = `
     <td>${person.name}</td>
-    <td>${person.gender}</td>
+    <td>${person.sex}</td>
     <td>${person.born}</td>
     <td>${person.died}</td>
     <td>${age}</td>
@@ -380,6 +380,7 @@ const rows = people.map((person) => {
 
   return tr;
 });
+
 // 3. Додаємо всі створені рядки в таблицю за один раз
 // Використовуємо spread-оператор (...),
 // щоб передати кожен елемент масиву окремо
